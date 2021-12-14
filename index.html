@@ -5,29 +5,46 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | NFT preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
   </style>
+    
+
+ 
 </head>
 <body>
-
-  Equilibrium #3429
-
-  Our Equilibrium collection promotes balance and calm.
-
-  0.041 ETH
-  3 days left
-  
-  Creation of Jules Wyvern
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="main-container">
+    <img class="img-equilibium" src="images/image-equilibrium.jpg" alt="equilibrium">
+    <div class="content-ctr">
+      <h2>Equilibrium #3429</h2>
+      <p>Our Equilibrium collection promotes balance and calm.</p>
+      <div class="eth-and-days-left">
+        <div class="eth">
+          <img src="images/icon-ethereum.svg" alt="ethereum">
+          <p class="cyan-color">0.041ETH</p>
+        </div>
+        <div class="days-left">
+          <img src="images/icon-clock.svg" alt="clock">
+          <p>3 days left</p>
+        </div>
+      </div>
+    </div>
+    <div class="divide-line"><hr></div>
+    <div class="creator">
+      <img class="creator-img" src="images/image-avatar.png" alt="Arsalan">
+      <p>Creation of <span class="white-color">Arsalan Farooq</span></p>
+    </div>
   </div>
+ 
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Arsalan Farooq</a>.
+    </div>
+  </footer>
 </body>
 </html>
